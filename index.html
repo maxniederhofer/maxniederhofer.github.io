@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<header class="masthead">
+  <h1 class="name">{{ site.title }}</h1>
+  {% if site.tagline %}<p class="tagline">{{ site.tagline }}</p>{% endif %}
+</header>
+
+{% if site.intro %}
+<section class="intro">
+  {{ site.intro | markdownify }}
+</section>
+{% endif %}
+
+<nav class="links" aria-label="Elsewhere">
+  <ul>
+    {% if site.social.email %}<li><a href="mailto:{{ site.social.email }}">Email</a></li>{% endif %}
+    {% if site.social.twitter %}<li><a href="{{ site.social.twitter }}" rel="me noopener" target="_blank">X / Twitter</a></li>{% endif %}
+    {% if site.social.linkedin %}<li><a href="{{ site.social.linkedin }}" rel="me noopener" target="_blank">LinkedIn</a></li>{% endif %}
+    {% if site.social.github %}<li><a href="{{ site.social.github }}" rel="me noopener" target="_blank">GitHub</a></li>{% endif %}
+  </ul>
+</nav>
