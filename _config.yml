@@ -17,12 +17,10 @@ intro: >-
 
 author:
   name: Max Niederhofer
-  email: max@heartcore.com
 
 # Social / contact links. Comment out any you don't want; the homepage only
 # renders the ones with a value. Use full URLs.
 social:
-  email: max@heartcore.com
   twitter: https://twitter.com/maxniederhofer
   linkedin: https://www.linkedin.com/in/maxniederhofer
   github: https://github.com/maxniederhofer
