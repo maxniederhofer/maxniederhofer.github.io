@@ -3,9 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#e8dec5">
   {% seo %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   {% feed_meta %}
 </head>
@@ -13,5 +15,11 @@
   <main class="wrap">
     {{ content }}
   </main>
+  <footer class="footer">
+    <ul>
+      {% if site.social.linkedin %}<li><a href="{{ site.social.linkedin }}" rel="me noopener" target="_blank">LinkedIn</a></li>{% endif %}
+      {% if site.social.x %}<li><a href="{{ site.social.x }}" rel="me noopener" target="_blank">X</a></li>{% endif %}
+    </ul>
+  </footer>
 </body>
 </html>

@@ -3,27 +3,20 @@
 # templates via {{ site.title }}, {{ site.author.name }}, and so on.
 
 title: Max Niederhofer
-tagline: Investor
 description: >-
   The personal website of Max Niederhofer.
 url: "https://maxniederhofer.github.io"
 baseurl: ""
 lang: en
 
-# A short intro shown on the homepage. Plain text or inline HTML / Markdown.
-intro: >-
-  I'm Max — an early-stage investor. This is my corner of the web for notes,
-  links, and the occasional longer thought.
-
 author:
   name: Max Niederhofer
 
-# Social / contact links. Comment out any you don't want; the homepage only
-# renders the ones with a value. Use full URLs.
+# Social links shown in the footer. Comment out any you don't want; the footer
+# only renders the ones with a value. Use full URLs.
 social:
-  twitter: https://twitter.com/maxniederhofer
   linkedin: https://www.linkedin.com/in/maxniederhofer
-  github: https://github.com/maxniederhofer
+  x: https://x.com/maxniederhofer
 
 # Build settings ---------------------------------------------------------------
 markdown: kramdown

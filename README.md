@@ -5,11 +5,11 @@ with [Jekyll](https://jekyllrb.com/) and served by GitHub Pages.
 
 ## Editing
 
-Most changes are made in **`_config.yml`** — name, tagline, intro text, and the
-social links shown on the homepage all live there. The page markup is in
-`index.html`, the shared shell in `_layouts/default.html`, and all styling in
-`assets/css/style.css` (light/dark aware; tweak the CSS custom properties at the
-top to re-theme).
+The homepage is a single verse in `index.html`. The shared shell and footer
+live in `_layouts/default.html`; the footer's social links come from
+**`_config.yml`**. All styling is in `assets/css/style.css`: a warm off-white
+background (approximately Farrow & Ball Tallow) with Cormorant Garamond, loaded
+from Google Fonts. Tweak the CSS custom properties at the top to re-theme.
 
 ## Running locally
 
