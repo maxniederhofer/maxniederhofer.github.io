@@ -1,17 +1,18 @@
 /* Minimal personal landing page ------------------------------------------------
-   A single, self-contained stylesheet. One warm off-white page (approximately
-   Farrow & Ball Tallow No. 203) with dark gray serif type. Edit the custom
+   A single, self-contained stylesheet. One warm near-black page with off-white
+   serif type and a wind of small letters moving behind it. Edit the custom
    properties below to re-theme the whole site. */
 
 :root {
-  --bg: #e8dec5;
-  --fg: #2b2a28;
-  --faint: #a8a39a;
+  color-scheme: dark;
+  --bg: #1c1b19;
+  --fg: #ece6d9;
+  --faint: #8a857c;
   --max: 52rem;
   --serif: "Cormorant Garamond", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --wind-ink: #857e72;   /* the letters of the background texture */
-  --wind-glow: #1840dc;  /* the colour a click ripples in */
+  --wind-ink: #8c877d;   /* the letters of the background texture */
+  --wind-glow: #1aadff;  /* the colour a click ripples in */
 }
 
 *, *::before, *::after { box-sizing: border-box; }

@@ -7,9 +7,9 @@ with [Jekyll](https://jekyllrb.com/) and served by GitHub Pages.
 
 The homepage is a single verse in `index.html`. The shared shell and footer
 live in `_layouts/default.html`; the footer's social links come from
-**`_config.yml`**. All styling is in `assets/css/style.css`: a warm off-white
-background (approximately Farrow & Ball Tallow) with Cormorant Garamond, loaded
-from Google Fonts. Tweak the CSS custom properties at the top to re-theme.
+**`_config.yml`**. All styling is in `assets/css/style.css`: a warm near-black
+page with off-white Cormorant Garamond, loaded from Google Fonts. Tweak the CSS
+custom properties at the top to re-theme.
 
 The background is a canvas texture (`assets/js/letter-wind.js`, started at the
 end of `_layouts/default.html`): small monospace letters lit by a drifting wind,

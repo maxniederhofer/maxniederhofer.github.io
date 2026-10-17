@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#e8dec5">
+  <meta name="theme-color" content="#1c1b19">
   {% seo %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +31,7 @@
       if (!layer || !window.LetterWind) return;
       var glow = getComputedStyle(document.documentElement).getPropertyValue('--wind-glow').trim();
       LetterWind.attach(layer, {
-        theme: 'light',
+        theme: 'dark',
         glow: glow || undefined,
         calm: [
           { element: document.querySelector('.verse'), padX: 72, padY: 44, floor: 0.12 },   // behind the verse, at any width
