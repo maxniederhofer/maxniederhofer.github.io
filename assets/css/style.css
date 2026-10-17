@@ -10,6 +10,8 @@
   --max: 52rem;
   --serif: "Cormorant Garamond", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --wind-ink: #857e72;   /* the letters of the background texture */
+  --wind-glow: #1840dc;  /* the colour a click ripples in */
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -31,6 +33,18 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* The background texture (assets/js/letter-wind.js): a canvas behind everything, never in the way of a click. */
+.wind {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  color: var(--wind-ink);
+  pointer-events: none;
+}
+
+.wrap,
+.footer { position: relative; z-index: 1; }
+
 .wrap {
   flex: 1;
   display: flex;
@@ -44,7 +58,10 @@ body {
 
 .verse {
   margin: 0;
+  padding: 1.5rem 1rem;
   text-align: center;
+  /* A soft island of page colour, so the background texture never runs under the words. */
+  background: radial-gradient(ellipse at center, var(--bg) 45%, transparent 100%);
 }
 
 .verse p {

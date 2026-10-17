@@ -12,6 +12,7 @@
   {% feed_meta %}
 </head>
 <body>
+  <div class="wind" aria-hidden="true"></div>
   <main class="wrap">
     {{ content }}
   </main>
@@ -21,5 +22,23 @@
       {% if site.social.x %}<li><a href="{{ site.social.x }}" rel="me noopener" target="_blank">X</a></li>{% endif %}
     </ul>
   </footer>
+  <script src="{{ '/assets/js/letter-wind.js' | relative_url }}"></script>
+  <script>
+    // The background: a wind of light over small changing letters, and a ripple wherever the page is clicked.
+    // Colours come from --wind-ink and --wind-glow in the stylesheet; the other knobs are at the top of the script.
+    (function () {
+      var layer = document.querySelector('.wind');
+      if (!layer || !window.LetterWind) return;
+      var glow = getComputedStyle(document.documentElement).getPropertyValue('--wind-glow').trim();
+      LetterWind.attach(layer, {
+        theme: 'light',
+        glow: glow || undefined,
+        calm: [
+          { element: document.querySelector('.verse'), padX: 72, padY: 44, floor: 0.12 },   // behind the verse, at any width
+          { x: 0.5, y: 0.95, rx: 130, ry: 50, floor: 0.3 }                                 // behind the footer links
+        ]
+      });
+    })();
+  </script>
 </body>
 </html>
